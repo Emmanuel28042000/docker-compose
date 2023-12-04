@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  my-nodejs-app:
+    image: testnodehellow
+    working_dir: /usr/src/app
+    ports:
+      - "3000:3000"
+    command: "node app1.js"
+
+  my-dotnet-app:
+    image: dotnet   # Replace with the actual name of your .NET image
+    container_name: my-dotnet-app
+    ports:
+      - "7075:8080"   # Expose the port your .NET application is running on inside the container
+
+  my-java-app:
+    image: aws  # Replace with the actual name of your Java image
+    container_name: aws
+    ports:
+      - "8077:8077"   # Expose the port your Java application is running on inside the container

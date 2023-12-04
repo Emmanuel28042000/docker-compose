@@ -1,0 +1,4 @@
+FROM openjdk:11
+EXPOSE 8077
+ADD /home/emmi/app/compose/my-java-app/devopstool.war devopstool.war
+ENTRYPOINT ["java","-jar","/home/emmi/app/compose/my-java-app/devopstool.war"]

@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  my-dotnet-app:
+    image: dotnet   # Replace with the actual name of your .NET image
+    container_name: my-dotnet-app
+    ports:
+      - "7075:8080"   # Expose the port your .NET application is running on inside the container
+
